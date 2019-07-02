@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.dropbtn {
+    background-color: #FD0941;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float:right;
+    height: 100px;
+
+}
+
+.dropdown-content {
+    display:none ;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: pink}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #80001D;
+}
+
+body{background-image: url(images2/image/background1.jpg);
+    background-repeat: no-repeat;}
+
+header{
+        margin: 8px;
+				height:140px;
+        border-radius: 15px;
+        }
+div.content{
+    background-image: url(images2/image/background4.jpg);
+    background-size: 800px 800px;
+    background-color: black;
+    border: 5px solid #eeeeee;
+    border-radius: 50px;
+    height: 550px;
+    width: 980px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.tutor figure{
+
+  background-image: url(images2/image/background3.jpg);
+  background-size: 200px;
+  margin: 30px;
+  margin-top: 50px;
+  border: 3px solid #ccc;
+  border-radius: 15px;
+  color: white;
+  float:left;
+}
+
+#nav{border-radius: 25px 0px 0px 25px}
+#nav1{border-radius: 0px 25px 25px 0px}
+
+footer   {font-size: 140%;
+          font-style: bold,verdana;
+          color: white;
+        	padding: 5px 0px 2px 100px;
+          clear: both;
+          float: right;
+       }
+
+#logo{
+  position: absolute;
+  left: 20px;
+  top: -18px;
+  z-index: -1;
+}
+</style>
+</head>
+<body>
+
+<header>
+
+    <figure>
+      <img id="logo" src="images2/image/LOGO1.PNG" alt="LAZIZ LOGO" width="200" height="200" align="left">
+    </figure>
+
+    <div class="dropdown">
+      <a href="contact.html"> <button id="nav1" class="dropbtn">Contact Us</button></a>
+    </div>
+
+    <div class="dropdown">
+      <a href="Tutorial_main_page.html" ><button class="dropbtn">Tutorial</button></a>
+    </div>
+
+    <div class="dropdown">
+    <a href="catering.html">  <button class="dropbtn">Catering & Delivery</button></a>
+
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Mahallah CAFE</button>
+      <div class="dropdown-content">
+        <a href="Ali.html">Ali</a>
+        <a href="zubair.html">Zubair</a>
+        <a href="#">Faruq</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+    <a href="Homepage.html">  <button id="nav" class="dropbtn">Home</button></a>
+    </div>
+
+</header>
+
+<div class="content">
+  <div class="tutor">
+  <figure>
+    <center><h3><b>VIDEO</b></h3></center>
+    <a href="video.html">
+    <img src="images2/image/tutor video.jpg" alt="video" width="250" height="250" ></a>
+    <center><figcaption><br><b>Tutorial video for demonstraion</b></figcaption></center>
+    <center><p>Click the image to see video list</p><br></center>
+  </figure>
+<center></center>
+  <figure>
+    <center><h3><b>RECIPE</b></h3></center>
+    <a href="recipe.html">
+    <img src="images2/image/tutor recipe.jpg" alt="recipe" width="250" height="250" ></a>
+    <center><figcaption><br><b>Tutorial recipe for beginner</b></figcaption></center>
+    <center><p>Click the image to have recipe list</p><br></center>
+  </figure>
+
+  <figure>
+    <center><h3><b>BOOK</b></h3></center>
+    <a href="Tutor_book.html">
+    <img src="images2/image/tutor book.jpg" alt="book" width="250" height="250" ></a>
+    <center><figcaption><br><b>Tutorial book for reference</b></figcaption></center>
+    <center><p>Click the image to pick any book <br>as reference</p></center>
+  </figure>
+  </div>
+</div>
+
+<footer>
+			&copy; -2017 <i><b> LAZIZ IIUM </b>co.</i>-
+</footer>
+
+</body>
+</html>

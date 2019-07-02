@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+<style>
+.checked {
+  color: orange;
+}
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+#prizes {
+  width: 1100px;
+  margin: auto;
+  height: 700px;
+  margin-top: 20px;
+}
+body{
+  background-image: url(images1/desert.jpg);
+  background-repeat: no-repeat;
+  background-size: 1390px 900px;
+}
+
+
+.dropbtn {
+    background-color: #FD0941;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float:right;
+    border-radius: 25px 25px 25px 25px;
+
+
+
+}
+
+.dropdown-content {
+    display:none ;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: pink}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #80001D;
+}
+header{
+  margin: 8px;
+  height: 140px;
+}
+input[type=text], select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 60px;
+}
+
+input[type=email], select {
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 60px;
+}
+
+#twitter {
+  width: 40%;
+  background-color: white;
+  color: #0394E6;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  height: 60px;
+  font-size: 1.2em;
+font-family: "DejaVu Sans Mono", monospace;
+border-style: solid;
+border-width: 1px;
+
+}
+
+input[type=submit]:hover {
+  background-color: #FA0477;
+}
+#contact {
+    border-radius: 25px;
+    padding: 20px;
+    margin: auto;
+    width: 700px;
+    height: 600px;
+    background-image: url(images1/lolipop.jpg);
+    background-size: 705px 595px;
+
+
+}
+textarea{
+  width: 60%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 150px;
+}
+
+h2{
+  font-family: "DejaVu Sans Mono", monospace;
+  font-weight: normal;
+  color: #7F7A79;
+  font-size: 2em;
+}
+p{
+  font-family: "DejaVu Sans Mono", monospace;
+  font-weight: normal;
+  color: #394349;
+  font-size: 1.0em;
+  font-weight: bold;
+
+}
+#media{
+
+  border-width: 1px;
+  border-style: solid;
+  border-color: #7F7A79;
+  margin-top: 70px;
+  width: 100px;
+
+}
+
+#facebook{
+  background-color: white;
+  width: 40%;
+  /*color: #0394E6;*/
+  color: #FE3C97;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  height: 60px;
+  font-size: 1.2em;
+  font-family: "DejaVu Sans Mono", monospace;
+  border-style: solid;
+  border-width: 1px;
+
+}
+
+#facebook:hover{
+
+}
+
+
+
+#message{
+  height: 200px;
+  padding: 12px 20px;
+
+}
+#home{
+  border-radius: 25px 0px 0px 25px;
+}
+#btn{
+  border-radius: 0px 25px 25px 0px;
+}
+
+form{
+  margin-top: 100px;
+  height: 0px;
+}
+
+#link{
+  text-decoration: none;
+  font-family: "DejaVu Sans Mono", monospace;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #AC2966;
+
+}
+
+#other{
+  margin-top: 100px;
+}
+#logo{
+  position: absolute;
+    left: 20px;
+    top: -18px;
+    z-index: -1;
+}
+
+footer{
+position: relative;
+font-size: 140%;
+font-style: bold,verdana;
+color: black;
+float: right;
+margin-left:170px;
+}
+
+
+</style>
+</head>
+<body>
+  <header>
+
+    <figure>
+      <img id="logo" src="images1/logo1.png"  width="200" height="200" align="left">
+    </figure>
+
+
+  <div class="dropdown">
+      <button id="btn" class="dropbtn">Contact Us</button>
+    </div>
+
+    <div class="dropdown">
+      <a href="Tutorial_main_page.html">  <button class="dropbtn">Tutorial</button></a>
+    </div>
+
+  <div class="dropdown">
+    <a href="catering.html"><button class="dropbtn">Catering & Delivery</button>
+
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Mahallah CAFE</button>
+    <div class="dropdown-content">
+      <a href="ali.html">Ali</a>
+      <a href="zubair.html">Zubair</a>
+      <a href="#">Faruq</a>
+    </div>
+  </div>
+
+
+  <div class="dropdown">
+    <a href="Homepage.html"> <button id="home" class="dropbtn">Home</button></a>
+  </div>
+</header>
+
+
+<div id="prizes">
+<div id="contact">
+  <center><h2>Thank You for Getting in Touch!</h2></center>
+  <center><p>In the mean time, see what kind of cool stuff we are up to...</p></center>
+
+  <form action="https://twitter.com/search?q=iium&src=typd&lang=en">
+    <center><input id="twitter" type="submit" value="Follow us on Twitter"></center>
+ </form>
+
+ <form action="https://www.facebook.com/search/str/iium+/keywords_search">
+   <center><input id="facebook" type="submit" value="Follow us on Facebook"></center>
+ </form> <br><br><br><br><br><br><br><br>
+
+ <center><a id="link" href="contact.html">Submit another Email</a></center>
+
+
+
+
+  </div>
+
+</div>
+<footer>
+  &copy; -2017 <i><b> LAZIZ IIUM </b>co.</i>-
+</footer>
+
+
+
+
+
+
+</body>
+</html>

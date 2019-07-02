@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+
+
+.dropbtn {
+    background-color: #FD0941;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float:right;
+    height: 100px;
+
+}
+
+.dropdown-content {
+    display:none ;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: pink}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #80001D;
+}
+body{background-image: url(images2/image/background1.jpg);}
+
+div.bookList{border: 3px solid  #F9E79F;
+            border-radius: 20px;
+            margin-bottom:20px;
+            background-image: url(images2/recipe/background.jpg );
+            background-size: 1200px 900px;
+            background-repeat: no-repeat;
+            background-position: right;
+            background-color: black ;
+            color: white;
+            height: 800px;
+            width: auto;
+            }
+dd strong{font-style: italic;
+          font-weight: bolder;
+          color: Grey;}
+
+div.bookList{margin: 20px 20px 20px 20px;}
+
+dl.book img{margin:0px 10px 0px 10px;}
+
+div.bookList img{border-radius:20px;}
+
+header{
+        margin: 8px;
+				height:140px;
+        }
+
+  #myBtn {
+          display: none;
+          position: fixed;
+          bottom: 20px;
+          right: 30px;
+          z-index: 99;
+          border: none;
+          outline: none;
+          background-color: red;
+          color: white;
+          cursor: pointer;
+          padding: 15px;
+          border-radius: 10px;
+        }
+
+#myBtn:hover {
+              background-color: #555;
+             }
+
+footer   {font-size: 140%;
+          font-style: bold,verdana;
+          color: white;
+        	padding: 5px 0px 2px 100px;
+          clear: both;
+          float: right;
+       }
+
+       #logo{
+         position: absolute;
+         left: 20px;
+         top: -18px;
+         z-index: -1;
+       }
+
+       #nav{border-radius: 25px 0px 0px 25px}
+       #nav1{border-radius: 0px 25px 25px 0px}
+
+       h2{border: 2px solid grey;
+          border-radius: 25px;
+          background-image: url(images2/image/background.jpg);
+          background-color: #ECF0F1;
+          width: 200px;
+          position: center;
+          }
+
+
+</style>
+</head>
+<body>
+
+<header>
+
+  <figure>
+    <img id="logo" src="images2/image/LOGO1.PNG" alt="LAZIZ LOGO" width="200" height="200" align="left">
+  </figure>
+
+    <div class="dropdown">
+    <a href="contact.html">  <button id="nav1" class="dropbtn">Contact Us</button></a>
+    </div>
+
+    <div class="dropdown">
+      <a href="Tutorial_main_page.html" ><button class="dropbtn">Tutorial</button></a>
+    </div>
+
+    <div class="dropdown">
+    <a href="catering.html">  <button class="dropbtn">Catering & Delivery</button></a>
+
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Mahallah CAFE</button>
+      <div class="dropdown-content">
+        <a href="Ali.html">Ali</a>
+        <a href="zubair.html">Zubair</a>
+        <a href="#">Faruq</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+    <a href="Homepage.html">  <button id="nav" class="dropbtn">Home</button></a>
+    </div>
+
+</header>
+
+<center><h2 style="font-family:verdana;  color:white; ">Book list </h2></center>
+
+<div class="bookList">
+
+  <dl class="book">
+    <img src="images2/recipe/booklist1.jpg" alt="Recipe Book" style="float:left;width:180px;height:180px;">
+    <dd><strong>Chef Wan Around the World : The Best Recipes From Asia's Most Celebrated Chef </strong></dd><br>
+    <dd>This is a collection of <em>86 recipes</em> which charts Chef Wan's travel over the past two decades in Asia,<br> the Middle East, the Mediterranean and Caribbean, Europe and the United States. </dd>
+    <dd>This book also give an account of his encounters as a student, meeting with other chefs and his adventures <br>dining at restaurants and cafes during his travels.</dd>
+    <dd>Chef Wan also include tips and suggestions to ensure that anyone can create delicious mails easily <br>and successfully from his collection of recipes.</dd><br>
+    <dd>Publication date: <strong>10 Mar 2009</strong></dd>
+  </dl>
+<br>
+  <dl class="book">
+    <img src="images2/recipe/booklist2.jpg" alt="Recipe Book" style="float:right;width:180px;height:180px;">
+    <dd><strong>Simply Sedap</strong></dd><br>
+    <dd>Malaysia's most popular food ambassador Chef Wan shares his favourite recipes for more than 180 savoury dishes.<br> Culled from his culinary adventures both at home and abroad over  </dd>
+    <dd>the last thirty years, these exciting recipes include all-time favourites like Tod Mun Pla (Thai Fish Cakes),<br> Wantan Soup with Japanese Bean Curd and Bubur Menado (Menado Vegetable Porridge), and adventurous dishes such as Kalio Udang Tempoyak </dd>
+    <dd>(Prawn in Preserved Durian Gravy), Umai Ikan (Sarawak Raw Fish Salad), Vietnamese Chicken with Mint and Ohnokaukswe (Burmese Curry Noodles). <br>Packed with personal anecdotes,
+    cooking tips and appealing recipes, this book will be a delight not just for the novice cook but for the seasoned cook as well.</dd>
+    <dd><br>Publication date: <strong>01 Jan 2012</strong></dd>
+  </dl>
+<br>
+<dl class="book">
+  <img src="images2/recipe/booklist3.jpg" alt="Recipe Book" style="float:left;width:180px;height:180px;">
+  <dd><strong>The Best of Chef Wan</strong></dd><br>
+  <dd>Malaysia's Culinary Ambassador and Asia's most notable chef Chef Wan shares 138 of his favourite Asian recipes in his latest book, The Best of Chef Wan.</dd>
+  <dd> With a full range of recipes including curries, stir-fries, braises, soups, noodle and rice dishes as well as snacks</dd>
+  <dd>and desserts, The Best of Chef Wan is set to be Chef Wan's best cookbook yet.</dd>
+  <dd><br>Publication date: <strong>01 Jun 2011</strong></dd>
+
+</dl>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+</div>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+<footer>
+			&copy; -2017 <i><b> LAZIZ IIUM </b>co.</i>-
+</footer>
+
+</body>
+</html>

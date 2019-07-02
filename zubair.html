@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+<style>
+
+.checked {
+  color: orange;
+}
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+#prizes {
+  width: 1100px;
+  height: 890px;
+  margin-top: 30px;
+  margin-left: 100px;
+  }
+body{
+  background-image: url(images1/dinner.jpg);
+  background-repeat: no-repeat;
+  background-size: 1350px 1160px;
+}
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 18%;
+    height: 194px;
+    border-radius: 25px 0px 0px 25px;
+}
+
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 25px 0px 0px 25px;
+}
+
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-radius: 0px 25px 25px 25px;
+    height:auto;
+    background-image: url(images1/wooden.jpg);
+    background-size: 800px 850px;
+
+
+}
+div.gallery {
+    padding: 1px;
+    margin: 14px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 220px;
+    height: 250px;
+    background-color:#F9E79F ;
+    border: 10px solid transparent;
+    border-radius: 20px;
+}
+
+div.gallery:hover   {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 135px;
+    border-radius: 15px;
+}
+
+div.desc {
+    padding: 8px;
+    text-align: center;
+}
+
+
+#img01 {
+margin: auto;
+    display: block;
+    width: 800px;
+
+}
+#img {
+  width: 800px;
+}
+.dropbtn {
+    background-color: #FD0941;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float:right;
+    border-radius: 25px 25px 25px 25px;
+
+
+
+}
+
+.dropdown-content {
+    display:none ;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: pink}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #80001D;
+
+}
+button:focus{
+  background-color: #80001D;
+}
+
+
+header{
+  margin: 8px;
+  height: 140px;
+
+}
+
+#logo{
+  position: absolute;
+    left: 20px;
+    top: -18px;
+    z-index: -1;
+}
+h2{
+margin-top: 40px;
+font-family: "DejaVu Sans Mono", monospace;
+border-style: solid;
+border-color: #B91C42;
+border-width: 2px;
+border-radius: 25px;
+width: 350px;
+color: #B91C42;
+background-color: white;
+}
+
+#home{
+  border-radius: 25px 0px 0px 25px;
+}
+#btn{
+  border-radius: 0px 25px 25px 0px;
+}
+
+footer{
+position: relative;
+font-size: 140%;
+font-style: bold,verdana;
+color: white;
+float: right;
+
+}
+
+
+
+
+</style>
+</head>
+<body>
+
+
+  <header>
+    <figure>
+      <img id="logo" src="images1/logo1.png"  width="200" height="200" align="left">
+    </figure>
+
+   <div class="dropdown">
+
+    <a href="contact.html"><button id="btn" class="dropbtn">Contact Us</button></a>
+    </div>
+
+    <div class="dropdown">
+      <a href="Tutorial_main_page.html">  <button class="dropbtn">Tutorial</button></a>
+    </div>
+
+  <div class="dropdown">
+    <a href="catering.html"><button class="dropbtn">Catering & Delivery</button></a>
+
+  </div>
+
+  <div class="dropdown">
+    <button class="dropbtn">Mahallah CAFE</button>
+    <div class="dropdown-content">
+      <a href="ali.html">Ali</a>
+      <a href="zubair.html">Zubair</a>
+      <a href="#">Faruq</a>
+    </div>
+  </div>
+
+
+  <div class="dropdown">
+    <a href="Homepage.html">  <button id="home" class="dropbtn">Home</button> </a>
+  </div>
+</header>
+
+<center><h2>Mahallah Zubair's Cafe</h2></center>
+<div id="prizes">
+
+
+<div class="tab">
+  <button  class="tablinks" onclick="openCafe(event, 'Cafe1')" id="defaultOpen">Mamak's Bistro</button>
+  <button class="tablinks" onclick="openCafe(event, 'Cafe2')">Ramly's Burger</button>
+  <button class="tablinks" onclick="openCafe(event, 'Cafe3')">Arab's Food</button>
+</div>
+
+<div id="Cafe1" class="tabcontent">
+  <div class="gallery">
+
+<img id="image" src="images1/roti.jpg" alt="" width="300" height="200">
+
+<div class="desc">
+Roti Canai
+<p>RM: 1.50</p>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<span class="fa fa-star"></span>
+</div>
+
+
+
+</div>
+
+<div class="gallery">
+
+<img id="image" src="images1/rtelur.jpg" alt="mee" width="300" height="200">
+
+<div class="desc">
+  Roti Canai Telur
+  <p>RM: 2.50</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+</div>
+</div>
+
+<div class="gallery">
+
+<img id="image" src="images1/rtisu.jpg" alt="nuuu" width="300" height="200">
+<div class="desc">
+  Roti Tisu
+  <p>RM: 1.80</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+</div>
+</div>
+
+<div class="gallery">
+<img id="image" src="images1/sardin.jpg" alt="nuuu" width="300" height="200">
+<div class="desc">
+  Roti Sardin
+  <p>RM: 4.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+
+</div>
+</div>
+
+<div class="gallery">
+
+<img id="image" src="images1/pisang.jpg" alt="mee" width="300" height="200">
+
+<div class="desc">
+  Roti Pisang
+  <p>RM: 3.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+
+</div>
+</div>
+
+<div class="gallery">
+
+<img id="image" src="images1/bom.jpg" alt="nuuu" width="300" height="200">
+<div class="desc">
+  Roti Bom
+  <p>RM: 2.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+
+
+</div>
+</div>
+<div class="gallery">
+
+<img id="image" src="images1/milo.jpg" alt="nuuu" width="300" height="200">
+<div class="desc">
+  Roti Canai Milo
+  <p>RM: 3.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+
+
+</div>
+</div>
+<div class="gallery">
+
+<img id="image" src="images1/cheese.jpg" alt="nuuu" width="300" height="200">
+<div class="desc">
+  Roti Canai Cheese
+  <p>RM: 4.50</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+
+
+</div>
+</div>
+<div class="gallery">
+
+<img id="image" src="images1/goyang.jpg" alt="nuuu" width="300" height="200">
+<div class="desc">
+  Roti Telur Goyang
+  <p>RM: 2.50</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star "></span>
+
+
+</div>
+</div>
+</div>
+
+
+<div id="Cafe2" class="tabcontent">
+
+  <div class="gallery">
+
+  <img id="image" src="images1/ayam.jpg" alt="" width="300" height="200">
+
+  <div class="desc">
+  Burger Ayam
+  <p>RM: 3.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  </div>
+  </div>
+
+  <div class="gallery">
+
+  <img id="image" src="images1/daging.jpg" width="300" height="200">
+
+  <div class="desc">
+  Burger Daging
+  <p>RM: 4.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  </div>
+  </div>
+  <div class="gallery">
+
+  <img id="image" src="images1/odaging.jpg" alt="" width="300" height="200">
+
+  <div class="desc">
+  Oblong Daging
+  <p>RM: 4.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  </div>
+  </div>
+  <div class="gallery">
+
+  <img id="image" src="images1/oayam.jpg" alt="" width="300" height="200">
+
+  <div class="desc">
+  Oblong Ayam
+  <p>RM: 3.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  </div>
+  </div>
+  <div class="gallery">
+
+  <img id="image" src="images1/acheese.jpg" alt="" width="300" height="200">
+
+  <div class="desc">
+  Burger Ayam Cheese
+  <p>RM: 5.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  </div>
+  </div>
+  <div class="gallery">
+
+  <img id="image" src="images1/dcheese.jpg" alt="" width="300" height="200">
+
+  <div class="desc">
+  Burger Daging Cheese
+  <p>RM: 6.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  </div>
+  </div>
+
+
+
+
+
+
+</div>
+
+
+<div id="Cafe3" class="tabcontent">
+  <div class="gallery">
+
+  <img id="image" src="images1/mandy.jpg" alt="" width="300" height="200">
+
+  <div class="desc">
+  Nasi Arab Mandy
+  <p>RM: 7.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  </div>
+  </div>
+  <div class="gallery">
+
+  <img id="image" src="images1/kambing.jpg" alt="" width="300" height="200">
+
+  <div class="desc">
+  Nasi Kabsa Kambing
+  <p>RM: 12.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  </div>
+  </div>
+  <div class="gallery">
+
+  <img id="image" src="images1/hudhar.jpg" alt="" width="300" height="200">
+
+  <div class="desc">
+  Nasi Arab Hudhar
+  <p>RM: 10.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  </div>
+  </div>
+  <div class="gallery">
+
+  <img id="image" src="images1/syria.jpg" alt="" width="300" height="200">
+
+  <div class="desc">
+  Nasi Arab Syria
+  <p>RM: 11.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  <span class="fa fa-star"></span>
+  </div>
+  </div>
+  <div class="gallery">
+
+  <img id="image" src="images1/ssyria.jpg" alt="" width="300" height="200">
+
+  <div class="desc">
+  Shawarma Syria
+  <p>RM: 6.00</p>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star checked"></span>
+  <span class="fa fa-star"></span>
+  </div>
+  </div>
+
+
+</div>
+
+
+
+<script>
+function openCafe(evt, cafeName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cafeName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+
+var modal = document.getElementById('myModal');
+</script>
+
+
+
+
+<footer>
+  <br>
+
+  &copy; -2017 <i><b> LAZIZ IIUM </b>co.</i>-
+</footer>
+
+</body>
+</html>

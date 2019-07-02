@@ -1,0 +1,320 @@
+
+<head>
+<style>
+
+
+
+.dropbtn {
+    background-color: #FD0941;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float:right;
+    height: 100px;
+
+}
+
+.dropdown-content {
+    display:none ;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: pink}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #80001D;
+}
+
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    margin-top: 30px;
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 25%;
+    height: 194px;
+    border-radius: 25px 0px 0px 25px;
+}
+
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 25px 0px 0px 25px;
+}
+
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    margin-top: 30px;
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-radius: 0px 25px 25px 25px;
+    height:auto;
+    background-image: url(images2/image/background2.jpg);
+    background-size: 900px 500px;
+    }
+
+strong{color: red;}
+
+li{color: white;}
+
+    button:focus{
+      background-color: #80001D;
+    }
+
+
+body{background-image: url(images2/image/background1.jpg);}
+
+header{
+        margin: 8px;
+				height:140px;
+        }
+
+footer   {font-size: 140%;
+          font-style: bold,verdana;
+          color: white;
+        	padding: 5px 0px 2px 100px;
+          clear: both;
+          float: right;
+       }
+
+       #logo{
+         position: absolute;
+         left: 20px;
+         top: -18px;
+         z-index: -1;
+       }
+
+       #nav{border-radius: 25px 0px 0px 25px}
+       #nav1{border-radius: 0px 25px 25px 0px}
+
+       h2{border: 2px solid grey;
+          border-radius: 25px;
+          background-image: url(images2/image/background4.jpg);
+          background-color: #ECF0F1;
+          width: 200px;
+          position: center;
+          }
+
+  div.gallery img{border-radius: 20px;}
+
+</style>
+</head>
+<body>
+
+<header>
+
+  <figure>
+    <img id="logo" src="images2/image/LOGO1.PNG" alt="LAZIZ LOGO" width="200" height="200" align="left">
+  </figure>
+
+
+    <div class="dropdown">
+    <a href="contact.html">  <button id="nav1" class="dropbtn">Contact Us</button></a>
+    </div>
+
+    <div class="dropdown">
+    <a href="Tutorial_main_page.html" target="Tutorial"><button class="dropbtn">Tutorial</button></a>
+    </div>
+
+    <div class="dropdown">
+    <a href="catering.html">  <button class="dropbtn">Catering & Delivery</button></a>
+
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Mahallah CAFE</button>
+      <div class="dropdown-content">
+        <a href="Ali.html">Ali</a>
+        <a href="zubair.html">Zubair</a>
+        <a href="#">Faruq</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+    <a href="Homepage.html">  <button id="nav" class="dropbtn">Home</button></a>
+    </div>
+
+</header>
+
+<center><h2 style="font-family:verdana;  color:white; ">RECIPE </h2></center>
+
+<div class="tab">
+  <button  class="tablinks" onclick="openRecipe(event, 'recipeName1')" id="defaultOpen">Brownies</button>
+  <button class="tablinks" onclick="openRecipe(event, 'recipeName2')">Blueberry Muffin</button>
+  <button class="tablinks" onclick="openRecipe(event, 'recipeName3')">Classic PHILADELPHIA Cheesecake</button>
+</div>
+
+
+
+<div id="recipeName1" class="tabcontent" >
+  <div class="gallery">
+    <img src="images2/recipe/recipe_a.jpg" style="float:right;width:180px;height:180px;">
+
+      <h4><p><strong>Ingredients</strong></p></h4>
+    <ul>
+      <li>½  cup cocoa</li>
+      <li>½  cup butter (1 stick)</li>
+      <li>2  eggs</li>
+      <li>1  cup sugar</li>
+      <li>¼  cup flour</li>
+      <li>1  cup chopped or broken-up walnuts or pecans</li>
+      <li>1  teaspoon vanilla</li>
+      <li>a Pinch of salt</li>
+    </ul>
+
+      <p><strong>Preparation</strong></p>
+    <ol>
+      <li>Preheat oven to 325F</li>
+      <li>Grease an 8-inch-square pan. (Line it with aluminum foil, overhanging on all sides.)</li>
+      <li>Melt butter in a saucepan with cocoa and stir until smooth.</li>
+      <li>Remove from heat and let cool for a few minutes.</li>
+      <li>Whisk in eggs, one at a time.</li>
+      <li>Stir in vanilla.</li>
+      <li>In a separate bowl, combine sugar, flour, nuts and salt.</li>
+      <li>Add to the cocoa-butter mixture. Stir until just combined.</li>
+      <li>Pour into prepared pan and bake 30-40 minutes. (Do not overbake: Center should still be a little gooey.)</li>
+      <li>Let cool completely before cutting into squares. If foil lining is used, lift from pan and cut into 16 squares on a cutting board.</li>
+    </ol>
+  </div>
+</div>
+
+<div id="recipeName2" class="tabcontent">
+  <div class="gallery">
+    <img src="images2/recipe/recipe_b.jpg" style="float:right;width:180px;height:180px;">
+      <h4><p><strong>Ingredients</strong></p></h4>
+    <ul>
+
+      <li>1⁄2 cup butter or 1⁄2 cup margarine, at room temp</li>
+      <li>1 cup granulated sugar</li>
+      <li>2 large eggs</li>
+      <li>1 teaspoon vanilla</li>
+      <li>2 teaspoons baking powder</li>
+      <li>1⁄4 teaspoon salt</li>
+      <li>2 cups all-purpose flour</li>
+      <li>1 cup milk</li>
+      <li>2 1⁄2 cups fresh blueberries or 2 1⁄2 cups frozen blueberries</li>
+      <li>lemon zest</li>
+    </ul>
+    <ul>
+      <h4><li><strong>For topping</strong></li></h4>
+      <li>1 tablespoon granulated sugar, mixed with</li>
+      <li>1⁄4 teaspoon ground nutmeg</li>
+    </ul>
+
+      <p><strong>Preparation</strong></p>
+      <ol>
+          <li>Heat oven to 375°.</li>
+          <li>Grease 18 regular-size muffin cups (or 12 large size muffins).</li>
+          <li>In bowl, mix butter until creamy. Add sugar and beat until pale and fluffy.</li>
+          <li>Add eggs one at a time, beating after each.</li>
+          <li>Beat in vanilla, baking powder and salt.</li>
+          <li>With spoon, fold in half of flour then half of milk into batter; repeat.</li>
+          <li>Fold in blueberries.</li>
+          <li>Spoon into muffin cups and sprinkle topping onto each muffin.</li>
+          <li>Bake 15 to 20 minutes, until golden brown and springy to touch.</li>
+      </ol>
+  </div>
+</div>
+
+
+<div id="recipeName3" class="tabcontent">
+  <div class="gallery">
+    <img src="images2/recipe/recipe_c.jpg" style="float:right;width:180px;height:180px;">
+    <h4><p><strong>Ingredients</strong></p></h4>
+    <ul>
+
+      <li>1 cup graham crumbs</li>
+      <li>3 Tbsp. sugar</li>
+      <li>3 Tbsp. butter, melted</li>
+      <li>5 pkg. (250 g each) Philadelphia Brick Cream Cheese, softened</li>
+      <li>1 cup sugar</li>
+      <li>3 Tbsp. flour</li>
+      <li>1 Tbsp. vanilla</li>
+      <li>1 cup sour cream</li>
+      <li>4 eggs</li>
+    </ul>
+
+      <p><strong>Preparation</strong></p>
+      <ol>
+          <li>Heat oven to 325ºF.</li>
+          <li>Mix crumbs, 3 Tbsp. sugar and butter; press onto bottom of 9-inch springform pan. Bake 10 min.</li>
+          <li>Beat cream cheese, 1 cup sugar, flour and vanilla in large bowl with mixer until blended. Add sour cream; mix well. Add eggs, 1 at a time, mixing on low speed after each just until blended. Pour over crust.</li>
+          <li>Bake 1 hour 10 min. or until centre is almost set. Run knife around rim of pan to loosen cake; cool before removing rim. Refrigerate 4 hours.</li>
+      </ol>
+  </div>
+</div>
+
+
+
+<script>
+function openRecipe(evt, recipeName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(recipeName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+document.getElementById("defaultOpen").click();
+
+var modal = document.getElementById('myModal');
+</script>
+
+<footer>
+			&copy; -2017 <i><b> LAZIZ IIUM </b>co.</i>-
+</footer>
+
+</body>
+</html>
